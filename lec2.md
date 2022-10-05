@@ -72,10 +72,29 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ```
 추가. 보통 자동으로 추가되어 있음.
 
-## 사용법
-터미널에 fzf를 쳐본다.
+잘 설치되어있는지 확인하기 위해 터미널에 fzf를 쳐본다.
 
+### fzf 사용하기 이전 알아야 할 상식
+- cat hello.txt 는 hello.txt 의 내용을 터미널에 출력한다.
+- `XXX | YYY` 와 같이 | (파이프) 명령어를 사용하면 XXX 명령의 결과를 YYY 프로그램에 입력한다.
+
+예시:
 ```
+### main.py
+x = input()
+print("input is", x)
+```
+위 파일을 만들고
+```
+echo "abcd" | py main.py
+```
+라고 하면 즉시
+```
+input is abcd
+```
+가 출력된다.
+
+## fzf 사용법
 ### temp.txt
 hello
 world
@@ -88,3 +107,4 @@ cat temp | fzf
 해본다.
 
 # zoxide
+curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
