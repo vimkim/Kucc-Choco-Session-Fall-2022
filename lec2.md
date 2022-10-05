@@ -116,3 +116,22 @@ cat temp | fzf
 ```
 curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
 ```
+결과를 한번 읽어보고 
+`~/.local/bin`을 소싱하지 않았다 이런 말이 나오면
+.zshrc 파일에
+```
+PATH=~/.local/bin:$PATH
+```
+를 추가한다.
+
+그 이후
+
+```
+eval "$(zoxide init zsh)"
+```
+를 .zshrc에 맨 밑에 추가해주면 설치 완료.
+
+## 사용법
+z xxx 를 누르면 예전에 방문한 적 있는 xxx 폴더로 가준다.
+이것보다 더 유용한 단축키는 zi
+폴더 2개 이상을 cd로 방문해본 뒤 zi를 실행해보면 된다.
