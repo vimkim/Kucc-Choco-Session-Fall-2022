@@ -48,3 +48,43 @@ x(){
 }
 ```
 
+# zsh
+https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms
+
+```
+sudo apt install zsh
+```
+
+# fzf
+설치하는 방법
+```
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+``` 
+
+`sudo apt install fzf`도 되지만 가끔 버전이 너무 낮음. git이 속편함.
+
+그 후
+
+.zshrc에
+```
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+```
+추가. 보통 자동으로 추가되어 있음.
+
+## 사용법
+터미널에 fzf를 쳐본다.
+
+```
+### temp.txt
+hello
+world
+my name is Kim
+```
+위 파일을 홈디렉토리에 만들어보고
+```
+cat temp | fzf
+```
+해본다.
+
+# zoxide
