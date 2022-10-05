@@ -34,4 +34,17 @@ mc(){
 ```
 
 ## x 라는 명령어를 만들어 .bashrc에 추가하라.
+```
+x(){
+  if [ -f main.py ]; then
+    python3 main.py
+  elif [ -f main.c ]; then
+    gcc main.c && ./a.out
+  # elif [ -f bin/main.ml ]; then
+  #  dune exec ${PWD##*/}
+  # else
+  # echo "hello"
+  fi
+}
+```
 
