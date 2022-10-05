@@ -55,6 +55,11 @@ https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-man
 sudo apt install zsh
 ```
 
+현재 쉘이 zsh인지 확인하는 법:
+```
+echo $SHELL
+```
+
 # fzf
 설치하는 방법
 ```
