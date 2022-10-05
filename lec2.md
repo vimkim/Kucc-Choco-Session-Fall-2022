@@ -108,4 +108,6 @@ cat temp | fzf
 해본다.
 
 # zoxide
+```
 curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
+```
