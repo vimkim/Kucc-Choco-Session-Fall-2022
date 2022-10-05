@@ -95,6 +95,7 @@ input is abcd
 가 출력된다.
 
 ## fzf 사용법
+```
 ### temp.txt
 hello
 world
