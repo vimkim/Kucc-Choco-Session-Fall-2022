@@ -48,6 +48,9 @@ x(){
 }
 ```
 
+> `&&` 뒤에 있는 명령어는 앞에 명령어가 정상 동작해야만 실행한다.
+> gcc main.c 가 성공적으로 컴파일에 성공해야만 새로 만들어진 ./a.out이 실행되도록 하는 명령어줄이다. 
+
 # zsh
 https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms
 
@@ -113,6 +116,9 @@ cat temp | fzf
 해본다.
 
 # zoxide
+zoxide는 frecency, 즉, frequent + recent한 폴더들에 가산점을 매겨
+유저가 조금의 힌트만 제공하면 즉시 해당 폴더로 이동해준다.
+
 ```
 curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
 ```
@@ -132,6 +138,10 @@ eval "$(zoxide init zsh)"
 를 .zshrc에 맨 밑에 추가해주면 설치 완료.
 
 ## 사용법
-z xxx 를 누르면 예전에 방문한 적 있는 xxx 폴더로 가준다.
-이것보다 더 유용한 단축키는 zi
+### z
+`z xxx`
+를 누르면 예전에 방문한 적 있는 xxx 폴더로 가준다.
+
+### zi
 폴더 2개 이상을 cd로 방문해본 뒤 zi를 실행해보면 된다.
+매우 유용한 단축키!!
