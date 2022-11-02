@@ -119,7 +119,7 @@ code $profile
 라고 적어보고 파워쉘을 닫았다 다시 열어봅시다. 새로운 파워쉘이 실행될 때마다 hello 문구를 출력하는 것을 관찰할 수 있습니다.
 
 ### alias 만들기
-zsh와 달리 powershell에서의 alias는 정말 단순히 명령어의 이름만 바꾸는 용도이다. 별로 자주 쓰이지 않는다.
+zsh와 달리 powershell에서의 alias는 정말 단순히 명령어의 이름만 바꾸는 용도입니다. 별로 자주 쓰이지 않습니다. function을 더 많이 쓴다고 보시면 됩니다.
 
 ```
 set-alias cz zi
@@ -128,7 +128,7 @@ set-alias co code
 ```
 
 ### function 만들기
-파워쉘 프로필 스크립팅의 꽃이라고 할 수 있다. zsh와 똑같이, mc, cl, x 등 우리가 지금껏 만들어 온 거의 모든 편의 기능들을 똑같이 구현할 수 있다.
+파워쉘 프로필 스크립팅의 꽃이라고 할 수 있습니다. zsh와 똑같이, mc, cl, x 등 우리가 지금껏 만들어 온 거의 모든 편의 기능들을 똑같이 구현할 수 있습ㄴ디ㅏ.
 
 ```powershell
 function hw() {
@@ -197,8 +197,28 @@ function x() {
 
 ```
 
+## fzf 설치
 
+https://github.com/junegunn/fzf#windows
 
+여기 들어가서 따라하면 됩니다. choco, scoop의 사용법을 모른다면 그냥 pre-built binary를 받아서 설치하면 됩니다. 
 
+## zioxide 설치
+
+https://github.com/ajeetdsouza/zoxide#installation
+
+따라하면 됩니다.
+
+설치 후 powershell 로 적당히 아무 디렉토리들로 cd를 하면서 데이터베이스를 만든 뒤,
+zi를 타이핑해보세요.
+
+```
+curl.exe -A "MS" https://webinstall.dev/zoxide | powershell
+```
+
+## 참고 자료
+
+좀 더 이쁜 파워쉘을 원하신다면
+https://ohmyposh.dev/
 
 
