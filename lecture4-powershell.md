@@ -35,7 +35,7 @@ POSIX란 Portable OS Interface의 약자인데 자세한 건 모르셔도 되고
 4. fzf, zioxide 설치하는 법
 
 > Quiz: 현재 내가 사용하고 있는 쉘이 Powershell인지 cmd.exe인지 구분하는 방법은?
-> ls라고 입력해본 후 결과를 보면 됩니다. Powershell 이라면 현재 폴더에 존재하는 모든 파일과 폴더 이름을 출력하겠지만, cmd.exe 이라면 'ls'가 무슨 뜻인지 모른다고 불평합니다. 
+>> ls라고 입력해본 후 결과를 보면 됩니다. Powershell 이라면 현재 폴더에 존재하는 모든 파일과 폴더 이름을 출력하겠지만, cmd.exe 이라면 'ls'가 무슨 뜻인지 모른다고 불평합니다. 
 
 
 
