@@ -118,6 +118,87 @@ code $profile
 거기에 `echo "hello"`
 라고 적어보고 파워쉘을 닫았다 다시 열어봅시다. 새로운 파워쉘이 실행될 때마다 hello 문구를 출력하는 것을 관찰할 수 있습니다.
 
+### alias 만들기
+zsh와 달리 powershell에서의 alias는 정말 단순히 명령어의 이름만 바꾸는 용도이다. 별로 자주 쓰이지 않는다.
+
+```
+set-alias cz zi
+
+set-alias co code
+```
+
+### function 만들기
+파워쉘 프로필 스크립팅의 꽃이라고 할 수 있다. zsh와 똑같이, mc, cl, x 등 우리가 지금껏 만들어 온 거의 모든 편의 기능들을 똑같이 구현할 수 있다.
+
+```powershell
+function hw() {
+  cd "$home/Documents/homework"
+}
+
+
+function which() {
+  get-command -all @args
+}
+
+
+function gst() {
+  git status
+}
+
+
+function gad() {
+  git add @args
+}
+
+
+function profile() {
+  code $profile
+}
+
+
+function mc() {
+  try {
+    mkdir @args
+  }
+  catch [System.IO.IOException] {
+    echo "Already exists!"
+  }
+  
+  cd @args
+}
+
+
+function cl {
+  [CmdletBinding()]
+  param(
+    [Parameter(ValueFromPipeline)]
+    $_cd_paths
+  )
+  
+  if ($null -ne $_cd_paths) {
+    _cd $_cd_paths
+  }
+  
+  ls
+}
+
+
+function x() {
+  if (test-path main.py){
+    python main.py @args
+  }
+  elseif (test-path main.js) {
+    node main.js @args
+  }
+  elseif (test-path ./src/main.rs) {
+    cargo run
+}
+
+
+```
+
+
+
 
 
 
