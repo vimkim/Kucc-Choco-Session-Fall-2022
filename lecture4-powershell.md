@@ -37,6 +37,64 @@ POSIX란 Portable OS Interface의 약자인데 자세한 건 모르셔도 되고
 > Quiz: 현재 내가 사용하고 있는 쉘이 Powershell인지 cmd.exe인지 구분하는 방법은?
 >> ls라고 입력해본 후 결과를 보면 됩니다. Powershell 이라면 현재 폴더에 존재하는 모든 파일과 폴더 이름을 출력하겠지만, cmd.exe 이라면 'ls'가 무슨 뜻인지 모른다고 불평합니다. 
 
+## 정말 간단한 사용법
+```
+ls
+mkdir temp
+cd temp
+cd ..
+echo "hello"
+touch main.py
+rm main.py
+code main.c
+cat main.c
+```
+
+### 파워쉘에서 파일 익스플로러 열기
+```
+ii .
+```
+
+### 파일 익스플로러에서 파워쉘 열기
+> 마우스 오른쪽 클릭 후 "터미널에서 열기" 선택
+
+### 파워쉘에서 XXX 명령어의 위치 확인하기 (리눅스의 which)
+```
+get-command -all XXX
+```
+
+```
+# 예시
+get-command -all python
+```
+
+이것들만 알아도 못할 것이 없습니다. 이제 alias들을 만들어서 생산성을 극대화해봅시다. `.zshrc`를 수정하는 것처럼 파워쉘에서도 프로필 스크립트를 만들 수 있습니다.  
+
+## 유저 프로필 스크립트 만들기
+
+```
+echo $profile
+```
+
+위와 같이 파워쉘에 타이핑하면 유저 프로필 스크립트의 위치를 출력합니다.
+저는 다음과 같이 나옵니다.
+
+```
+C:\Users\kimdh\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+```
+
+리눅스 환경의 .bashrc, .zshrc보다는 파일명이 조금 길고 복잡하죠? 하지만 걱정할 것 없습니다. 
+
+위 파일을 수정하고 싶으면 아래와 같이 타이핑해서 vscode로 $profile을 바로 열어서 수정하면 됩니다.
+
+```
+code $profile
+```
+
+해당 파일을 처음 열어보았다면 아마 아무 내용도 적혀있지 않을 겁니다.
+
+거기에 `echo "hello"`
+라고 적어보고 파워쉘을 닫았다 다시 열어봅시다. 새로운 파워쉘이 실행될 때마다 hello 문구를 출력하는 것을 관찰할 수 있습니다.
 
 
 
