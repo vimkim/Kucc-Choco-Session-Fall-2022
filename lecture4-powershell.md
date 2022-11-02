@@ -15,9 +15,9 @@ CMD.exe is deprecated.
 
 그동안 윈도우창에 Command Prompt, 혹은 한글로 명령 프롬프트를 쳐가면서 이용했던 경험이 있을 겁니다. 이제 더이상 그럴 필요가 없고 훨씬 더 편리한 powershell을 사용하는 것을 권장합니다.
 
-ls 대신 dir을 써야했던 불편한 cmd.exe는 이제 잊고 막강한 powershell의 힘을 누리면 됩니다. 
+ls 대신 dir을 써야했던 불편한 cmd.exe는 이제 잊고 막강한 powershell의 힘을 누리면 됩니다.
 
-### Powershell 은 POSIX 명령어를 지원합니다.
+## Powershell 은 POSIX 명령어를 지원합니다.
 
 POSIX란 Portable OS Interface의 약자인데 자세한 건 모르셔도 되고, 결론만 말하자면, 리눅스나 macOS에서 사용하던 명령어를 그대로 가져와 사용할 수 있다는 뜻입니다.
 
@@ -30,7 +30,8 @@ POSIX란 Portable OS Interface의 약자인데 자세한 건 모르셔도 되고
 3. 유저 function 만드는 법
 4. fzf, zioxide 설치하는 법
 
-
+## Quiz: 현재 내가 사용하고 있는 쉘이 Powershell인지 cmd.exe인지 구분하는 방법은?
+> ls라고 입력해본 후 결과를 보면 됩니다. Powershell 이라면 현재 폴더에 존재하는 모든 파일과 폴더 이름을 출력하겠지만, cmd.exe 이라면 'ls'가 무슨 뜻인지 모른다고 불평합니다. 
 
 
 
