@@ -232,6 +232,26 @@ zi를 타이핑해보세요.
 curl.exe -A "MS" https://webinstall.dev/zoxide | powershell
 ```
 
+## fd (find 툴보다 좋은 것) 사용법
+
+관리자 권한 파워쉘에서
+
+```
+choco install fd
+```
+
+이후
+
+일반 파워쉘에서
+
+```
+function cx() {
+  fd -type d | fzf | cd
+}
+```
+
+이러면 방문하지 않은 모든 서브 디렉토리도 갈 수 있습니다.
+
 ## 참고 자료
 
 좀 더 이쁜 파워쉘을 원하신다면
