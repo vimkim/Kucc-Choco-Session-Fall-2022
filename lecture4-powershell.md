@@ -17,6 +17,13 @@ CMD.exe is deprecated.
 
 ls 대신 dir을 써야했던 불편한 cmd.exe는 이제 잊고 막강한 powershell의 힘을 누리면 됩니다.
 
+파워쉘의 장점:
+1. posix 명령어 지원
+2. 오픈소스, 크로스플랫폼
+3. 고급 shell 기능들을 pwsh(= Powershell 6+)부터 지원, 매우 강력한 Powershell 7+ 
+
+> 아쉽지만 디폴트로 깔려있는 powershell은 Powershell 5 버전입니다.
+
 ## Powershell 은 POSIX 명령어를 지원합니다.
 
 POSIX란 Portable OS Interface의 약자인데 자세한 건 모르셔도 되고, 결론만 말하자면, 리눅스나 macOS에서 사용하던 명령어를 그대로 가져와 사용할 수 있다는 뜻입니다.
