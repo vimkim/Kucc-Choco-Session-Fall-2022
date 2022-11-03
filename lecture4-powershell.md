@@ -92,7 +92,11 @@ get-command -all python
 Set-ExecutionPolicy RemoteSigned
 ```
 
-끝입니다. 이제 유저 프로필 스크립트를 수정해보겠습니다.
+끝입니다. 이제 관리자 권한 파워쉘을 닫고, 일반 파워쉘을 다시 실행합니다.
+
+
+
+이제 유저 프로필 스크립트를 수정해보겠습니다.
 
 ```
 echo $profile
