@@ -225,12 +225,22 @@ https://github.com/ajeetdsouza/zoxide#installation
 
 따라하면 됩니다.
 
-설치 후 powershell 로 적당히 아무 디렉토리들로 cd를 하면서 데이터베이스를 만든 뒤,
-zi를 타이핑해보세요.
-
 ```
 curl.exe -A "MS" https://webinstall.dev/zoxide | powershell
 ```
+
+위 명령어를 실행한 후, $profile에 아래와 같은 명령어를 추가해두면 됩니다.
+
+```
+# For zoxide v0.8.0+
+Invoke-Expression (& {
+    $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
+    (zoxide init --hook $hook powershell | Out-String)
+})
+```
+
+설치 후 powershell 로 적당히 아무 디렉토리들로 cd를 하면서 데이터베이스를 만든 뒤,
+zi를 타이핑해보세요.
 
 ## fd (find 툴보다 좋은 것) 사용법
 
