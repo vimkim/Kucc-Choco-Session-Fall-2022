@@ -205,7 +205,19 @@ function x() {
 
 https://github.com/junegunn/fzf#windows
 
-여기 들어가서 따라하면 됩니다. choco, scoop의 사용법을 모른다면 그냥 pre-built binary를 받아서 설치하면 됩니다. 
+여기 들어가서 따라하면 됩니다. choco, scoop의 사용법을 모른다면 그냥 pre-built binary를 받아서 설치하면 됩니다.
+
+하지만 choco 를 사용해 설치하면 자동으로 $env:path에 추가해주기 때문에 더 편리합니다.
+
+choco란 윈도우의 3rd-party 패키지 매니저인데, 리눅스의 apt와 같은 역할을 하는 프로그램이라고 생각하시면 됩니다.
+
+**관리자 권한**으로 choco를 설치하신 후, 
+```
+choco install fzf
+```
+를 통해 **관리자 권한**으로 fzf를 설치하고
+
+다시 일반 파워쉘을 열면 됩니다.
 
 ## zioxide 설치
 
