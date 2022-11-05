@@ -325,6 +325,7 @@ function cx() {
 만약 cx를 통해서 탐색할 때, 방문하지 않았으면 하는 폴더가 있다면 .fdignore 파일을 작성해놓음으로써 탐색을 방지할 수 있습니다. `.gitignore`와 동일한 문법을 사용한다고 보시면 됩니다.
 
 예를 들어,
+
 ![image](https://user-images.githubusercontent.com/18080546/200097406-f8c2f4c4-7174-4413-a789-0753f6f5b4fd.png)
 
 위와 같은 .fdignore 파일은
