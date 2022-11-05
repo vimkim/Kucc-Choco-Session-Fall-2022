@@ -272,8 +272,11 @@ function cx() {
 ## 결론
 
 여러분은 windows terminal에서 powershell을 켠 뒤,
+
 cx나 cz를 통해 통해 원하는 폴더로 cd한 뒤,
+
 mc를 통해 새 폴더를 만들고
+
 code .를 통해 코딩을 시작하시면 됩니다!
 
 ## 참고 자료
