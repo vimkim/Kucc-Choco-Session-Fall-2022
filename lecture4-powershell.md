@@ -208,6 +208,26 @@ function x() {
 
 ```
 
+## choco 설치
+
+choco란 윈도우의 3rd-party 패키지 매니저인데, 리눅스의 apt와 같은 역할을 하는 프로그램이라고 생각하시면 됩니다.
+ 
+fzf, fd와 같을 툴들을 깃헙에서 직접 받아서 설치해도 되지만, choco 를 이용하면 훨씬 편합니다.
+
+명령어 한줄로 설치할 수 있고, 자동으로 $env:path에 추가해주기 때문에, 툴들을 설치한 후 환경변수를 따로 설정할 필요 없이 바로 사용할 수 있습니다.
+
+**관리자 권한**으로 choco를 설치하세요.
+
+https://chocolatey.org/install#individual
+
+여기서 자세한 내용을 살펴보실 수 있습니다.
+
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+이걸 파워쉘에 복붙하면 설치된다고 적혀있을 겁니다. 
+
 ## fzf 설치
 
 https://github.com/junegunn/fzf#windows
@@ -216,9 +236,6 @@ https://github.com/junegunn/fzf#windows
 
 하지만 choco 를 사용해 설치하면 자동으로 $env:path에 추가해주기 때문에 더 편리합니다.
 
-choco란 윈도우의 3rd-party 패키지 매니저인데, 리눅스의 apt와 같은 역할을 하는 프로그램이라고 생각하시면 됩니다.
-
-**관리자 권한**으로 choco를 설치하신 후, 
 ```
 choco install fzf
 ```
@@ -259,7 +276,7 @@ zi를 타이핑해보세요.
 
 fd라는 툴만 설치하시면 가능합니다!
 
-관리자 권한 파워쉘에서
+**관리자 권한** 파워쉘에서
 
 ```
 choco install fd
