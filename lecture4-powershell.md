@@ -280,7 +280,10 @@ zi는 타이핑하기 불편하기 때문에
 ```
 set-alias cz zi
 ```
-를 통해 cz라는 alias를 추가하거나, 기타 본인 취향에 맞는 명령얼 바꿔서 사용하시는 걸 추천합니다.
+를 통해 cz라는 alias를 추가하거나, 기타 본인 취향에 맞는 명령어로 바꿔서 사용하시는 걸 추천합니다.
+
+![image](https://user-images.githubusercontent.com/18080546/200097327-e25dc874-33ee-4bf9-9011-07d0178dc980.png)
+
 
 ## cx 함수 만들기
 
@@ -317,6 +320,19 @@ function cx() {
 위 이미지는 현재 폴더 밑에 있는 대략 1만개의 폴더를 모두 성공적으로 탐색한 모습입니다.
 
 이제 cx함수를 통해 방문하지 않은 모든 서브 디렉토리도 갈 수 있습니다!
+
+### .fdignore 설정
+만약 cx를 통해서 탐색할 때, 방문하지 않았으면 하는 폴더가 있다면 .fdignore 파일을 작성해놓음으로써 탐색을 방지할 수 있습니다. `.gitignore`와 동일한 문법을 사용한다고 보시면 됩니다.
+
+예를 들어,
+![image](https://user-images.githubusercontent.com/18080546/200097406-f8c2f4c4-7174-4413-a789-0753f6f5b4fd.png)
+
+위와 같은 .fdignore 파일은
+
+1. fd툴은 Documents폴더를 방문하지 않는다.
+2. 단, Documents/Github, Documents/ku4-2, Documents/Powershell 폴더들은 예외로 한다.
+
+라는 룰을 따릅니다.
 
 ## 결론
 
