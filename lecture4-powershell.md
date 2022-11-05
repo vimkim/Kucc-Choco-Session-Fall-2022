@@ -229,7 +229,7 @@ fzf, fd와 같을 툴들을 깃헙에서 직접 받아서 설치해도 되지만
 
 https://chocolatey.org/install#individual
 
-여기서 자세한 내용을 살펴보실 수 있습니다.
+위 링크에서 자세한 내용을 살펴보실 수 있습니다.
 
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
