@@ -141,6 +141,8 @@ set-alias co code
 ### function 만들기
 파워쉘 프로필 스크립팅의 꽃이라고 할 수 있습니다. zsh와 똑같이, mc, cl, x 등 우리가 지금껏 만들어 온 거의 모든 편의 기능들을 똑같이 구현할 수 있습니다.
 
+아래는 예시 프로필 스크립트입니다.
+
 ```powershell
 function hw() {
   cd "$home/Documents/homework"
@@ -205,6 +207,13 @@ function x() {
     cargo run
 }
 
+
+function cx() {
+  fd -type d | fzf | cd
+}
+
+
+set-alias cz zi
 
 ```
 
