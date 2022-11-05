@@ -39,7 +39,7 @@ POSIX란 Portable OS Interface의 약자인데 자세한 건 모르셔도 되고
 1. 유저 프로필 스크립트 만들어 커스터마이징 하는 법 (파워쉘에서 .bashrc, .zshrc와 같은 역할을 하는 문서는 무엇일까?)
 2. 유저 alias 만드는 법
 3. 유저 function 만드는 법
-4. fzf, zioxide 설치하는 법
+4. fzf, zoxide 설치하는 법
 
 > Quiz: 현재 내가 사용하고 있는 쉘이 Powershell인지 cmd.exe인지 구분하는 방법은?
 >> ls라고 입력해본 후 결과를 보면 됩니다. Powershell 이라면 현재 폴더에 존재하는 모든 파일과 폴더 이름을 출력하겠지만, cmd.exe 이라면 'ls'가 무슨 뜻인지 모른다고 불평합니다. 
