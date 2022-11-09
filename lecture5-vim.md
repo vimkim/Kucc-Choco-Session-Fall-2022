@@ -51,6 +51,17 @@ Soydev를 벗어나기 위해서는 vim을 배워야 한다!
 
 이 정도만 알아도 충분합니다!여기 있는 내용들을 자세히 다음 시간에 배워볼 겁니다.
 
+## Vim Adventure
+
+단축키를 익히는 건 사실 쉬실 일이 아닙니다. 다행히, vim 학습을 돕는 다양한 사이트들이 있습니다. 
+
+- https://vim-adventures.com/
+- https://openvim.com/
+- http://vimgenius.com/
+
+이 중에서, 우리는 오늘 간단히 vim adventures 게임을 3단계까지만 해보면서 손을 풀어 볼 겁니다.
+
+
 ## nvim 설치 방법
 
 macOS, Linux에는 vim이 이미 깔려있습니다. Windows는
@@ -89,6 +100,41 @@ nvim main.py
 
 라고 입력하시면 파이썬 파일을 생성할 수 있습니다.
 
+이제부터는 vim과 nvim을 혼용해서 말하도록 하겠습니다.
+
+## 간단한 사용법
+
+```
+nvim main.py
+```
+
+위와 같은 명령어를 통해 nvim 혹은 vim을 실행시키면 우선 normal 모드에 들어가게 됩니다.
+normal 모드란, 유저의 단축키 입력을 기다리는 상태입니다. 여러분이 vim을 쓰신다면 대부분의 시간을 normal mode에서 보내실 겁니다.
+
+![picture 4](images/4b0b960bb95f44f2cc58adefadcbbc7a13d8bb5ac1ff48ee1c6235bb220d107d.png)  
+
+키보드 i를 누르면 insert mode로 들어갈 수 있습니다.
+
+insert mode는 일반적인 텍스트 에디터와 다르지 않습니다. 원하는 만큼 타이핑을 하시면 됩니다. 아직 vim이 익숙하지 않다면 i를 눌러두고 모든 작업을 하시면 됩니다.
+
+ESC를 누르면 다시 normal mode로 들어가게 됩니다. 
+
+### .vimrc (_vimrc) 사용법
+vim은 일반적으로 사용자의 홈 디렉토리에 rc파일을 설정할 수 있습니다. 즉,
+
+``` bash
+~/.vimrc # zsh, bash
+$HOME/.vimrc # zsh, bash
+$HOME/_vimrc # powershell
+%USERPATH/_vimrc # Windows cmd.exe
+```
+
+윈도우에서는 _vimrc, 리눅스나 맥에서는 .vimrc 파일을 수정함으로써 vim 프로필 스크립트를 설정할 수 있습니다.
+
+알아만 두시면 됩니다.
+
+
+
 
 ## vscodevim 설치
 
@@ -105,17 +151,7 @@ vscode 플러그인에서 ctrl + shift + p를 눌러 command palette를 소환�
 
 vscodevim 익스텐션을 disable하면 다시 커서가 정상적인 모양으로 돌아오는 것을 볼 수 있습니다.
 
-
-## vim adventure
-
-단축키를 익히는 건 사실 쉬실 일이 아닙니다. 다행히, vim 학습을 돕는 다양한 사이트들이 있습니다. 
-
-- https://vim-adventures.com/
-- https://openvim.com/
-- http://vimgenius.com/
-
-이 중에서, 우리는 오늘 간단히 vim adventures 게임을 3단계까지만 해보면서 손을 풀어 볼 겁니다.
-
+## END
 
 끝으로, fireship의 영상으로 이번 강의를 마치겠습니다.
 
