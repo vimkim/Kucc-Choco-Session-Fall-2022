@@ -69,7 +69,7 @@ macOS, Linux에는 vim이 이미 깔려있습니다. Windows는
 https://www.vim.org/download.php
 
 여기에 들어가서 설치하면 됩니다.
-그런데 nvim을 설치하는 것을 권장할게요.
+그런데, **vim 대신 nvim을 설치하는 것을 권장**할게요.
 
 https://neovim.io/
 
