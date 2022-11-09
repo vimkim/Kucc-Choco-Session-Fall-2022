@@ -11,7 +11,7 @@ nvim을 깔아보는 시간을 갖겠습니다.
 
 구독자 166만명 유튜버 fireship의 vim 소개 영상을 봅시다. 딱 2분만 봐도 됩니다.
 
-https://www.youtube.com/watch?v=-txKSRn0qeA
+[[](https://img.youtube.com/vi/-txKSRn0qeA/0.jpg)](https://www.youtube.com/watch?v=-txKSRn0qeA)
 
 ## Soydev란?
 
@@ -24,16 +24,20 @@ Soydev를 벗어나기 위해서는 vim을 배워야 한다!
 한국에도 슬슬 많은 vim 관련 영상이 올라오기 시작했습니다.
 
 코딩애플
-https://www.youtube.com/watch?v=LmGB0uUnkR8
+
+[[](https://img.youtube.com/vi/LmGB0uUnkR8/0.jpg)](https://www.youtube.com/watch?v=LmGB0uUnkR8)
 
 드림코딩 
-https://www.youtube.com/watch?v=cY0JxzENBJg
+
+[[](https://img.youtube.com/vi/cY0JxzENBJg/0.jpg)](https://www.youtube.com/watch?v=cY0JxzENBJg)
 
 김왼손
-https://www.youtube.com/watch?v=Oj0if8rL-wo
+
+[[](https://img.youtube.com/vi/Oj0if8rL-wo/0.jpg)](https://www.youtube.com/watch?v=Oj0if8rL-wo)
 
 얄팍한 코딩사전
-https://www.youtube.com/watch?v=qn1soztN7k4
+
+[[](https://img.youtube.com/vi/qn1soztN7k4/0.jpg)](https://www.youtube.com/watch?v=qn1soztN7k4)
 
 
 제가 좋아하는 많은 코딩 관련 유튜버들이 vim에 대해 소개하고 있습니다.
@@ -114,6 +118,6 @@ vscodevim 익스텐션을 disable하면 다시 커서가 정상적인 모양으�
 
 
 끝으로, fireship의 영상으로 이번 강의를 마치겠습니다.
-https://youtu.be/h55emgImrLk?t=198
+[[](https://img.be/h55emgImrLk?vi/8/0.jpg)](https://youtu.be/h55emgImrLk?t=198)
 
 모두 vim 써서 부모님께 효도합시다!
