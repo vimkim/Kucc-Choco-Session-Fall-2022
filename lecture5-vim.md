@@ -119,6 +119,47 @@ insert mode는 일반적인 텍스트 에디터와 다르지 않습니다. 원�
 
 ESC를 누르면 다시 normal mode로 들어가게 됩니다. 
 
+
+우선, i를 눌러 insert mode에 들어가서
+
+``` python
+print("hello world!")
+
+for i in range(5):
+    print(i)
+```
+
+위와 같은 내용을 쳐볼게요.
+
+그 다음, esc를 눌러서 normal mode로 돌아와서
+```
+:w
+```
+를 누르면 파일을 저장할 수 있습니다.
+
+```
+:q
+```
+를 누르면 vim에서 빠져나와 shell로 돌아갈 수 있습니다.
+
+위 둘을 동시에 하는 방법은
+```
+:wq
+```
+입니다. 주로 이걸 가장 많이 사용합니다.
+
+똑똑한 분들은 눈치 채셨겠지만, 모드를 나타낸 위 그림과 같이, :를 누르면 command 모드로 변경됩니다.
+command모드에서는 write, quit 등의 명령을 타이핑해 실행시킬 수 있습니다.
+w, q는 write, quit의 축약어입니다. 
+
+그밖에 명령어로는
+```
+:set number
+:colorscheme blue
+```
+등이 있습니다. 
+
+
 ### .vimrc (_vimrc) 사용법
 vim은 일반적으로 사용자의 홈 디렉토리에 rc파일을 설정할 수 있습니다. 즉,
 
@@ -131,9 +172,52 @@ $HOME/_vimrc # powershell
 
 윈도우에서는 _vimrc, 리눅스나 맥에서는 .vimrc 파일을 수정함으로써 vim 프로필 스크립트를 설정할 수 있습니다.
 
-알아만 두시면 됩니다.
+이는 vim에 들어가서 command 모드에서
+
+```
+:echo $MYVIMRC
+```
+
+라는 명령어를 통해 확인해 볼 수 있습니다.
+
+nvim에서는 조금 더 복잡한데,
 
 
+```
+:echo $MYVIMRC
+```
+
+혹은
+
+```
+:help nvim-configuration
+```
+
+를 통해 rc파일을 확인해보면 보통
+```
+$HOME\AppData\Local\nvim\init.vim
+```
+
+```
+$HOME/.config/nvim/init.vim
+```
+
+에 위치합니다.
+
+기존에 사용하던 .vimrc의 내용을 고스란히 긁어와서 init.vim에 붙여넣어도 정상 작동합니다.
+
+자, 이제 .vimrc, 혹은 init.vim 파일에
+
+```
+set number
+colorscheme blue
+```
+
+위 내용을 추가하고 vim을 나갔다가 다시 실행해봅니다.
+
+좌측에 line number가 나타나고, 테마가 파란색으로 (보기 싫게) 바뀐 것을 볼 수 있습니다.
+
+어서 colorscheme blue는 지워줍시다...
 
 
 ## vscodevim 설치
