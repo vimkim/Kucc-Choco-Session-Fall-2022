@@ -5,7 +5,7 @@
 30분 정도 vim 관련 유튜브 영상을 본 뒤, vim-adventure 라는 게임을 간단히 소개하고,
 nvim을 깔아보는 시간을 갖겠습니다.
 
-![코딩의신?](https://www.youtube.com/watch?v=h_lpTMWrwRc)
+[![](https://img.youtube.com/vi/h_lpTMWrwRc/0.jpg)](https://www.youtube.com/watch?v=h_lpTMWrwRc)
 
 앗, 잘못된 유튜브를 가져왔네요...
 
@@ -60,7 +60,8 @@ https://neovim.io/
 
 nvim과 vim의 기능은 완전히 동일합니다. 단지 nvim이 조금 더 유저 친화적이라서, 초보에게 더 친절합니다.
 
-nvim의 장점
+### nvim의 장점
+
 1. vim은 1976년에 만들어진 vi를 계승한 에디터 답게 매우 비직관적이고 이상한 초기 설정을 가지고 있는데, nvim은 이를 개선했습니다.
 2. nvim의 코드는 vim에 비해 훨씬 더 깔끔하고 직관적이어서 수많은 사람들이 github에 기여하고 있습니다. 반면 vim은 한명의 메인테이너가 주로 모든 개발을 담당합니다.
 3. nvim은 기괴하고 불편한 vimscript 대신 lua라는 깔끔한 스크립팅 언어를 사용해서 튜닝할 수도 있습니다. 덕분에 수많은 플러그인들이 만들어지고 있습니다.
