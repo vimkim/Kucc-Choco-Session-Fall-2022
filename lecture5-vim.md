@@ -194,15 +194,18 @@ nvim에서는 조금 더 복잡한데,
 ```
 
 를 통해 rc파일을 확인해보면 보통
+
+윈도우는 여기
 ```
 $HOME\AppData\Local\nvim\init.vim
 ```
 
+리눅스, macOS는 여기
 ```
 $HOME/.config/nvim/init.vim
 ```
 
-에 위치합니다.
+에 위치합니다. 없으면 새로 만들면 됩니다.
 
 기존에 사용하던 .vimrc의 내용을 고스란히 긁어와서 init.vim에 붙여넣어도 정상 작동합니다.
 
