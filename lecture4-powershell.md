@@ -307,7 +307,7 @@ choco install fd
 
 ```
 function cx() {
-  fd -type d | fzf | cd
+  fd --type d | fzf | cd
 }
 ```
 
