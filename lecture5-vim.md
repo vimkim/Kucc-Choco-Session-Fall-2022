@@ -5,7 +5,7 @@
 30분 정도 vim 관련 유튜브 영상을 본 뒤, vim-adventure 라는 게임을 간단히 소개하고,
 nvim을 깔아보는 시간을 갖겠습니다.
 
-https://www.youtube.com/watch?v=h_lpTMWrwRc
+![코딩의신?](https://www.youtube.com/watch?v=h_lpTMWrwRc)
 
 앗, 잘못된 유튜브를 가져왔네요...
 
@@ -90,11 +90,27 @@ nvim main.py
 nvim을 설치하긴 했지만, IDE만큼의 기능을 추가하려면 설정을 많이 건드려줘야 합니다.
 저희는 그럴 시간이 없으므로, 실생활에서 vim을 사용할 수 있도록 vscode에도 vim keyboard layout extension인 vscodevim을 설치해보겠습니다.
 
+https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
+
+위 링크에 들어가 Install을 눌러 직접 설치하거나,
+
 vscode 플러그인에서 ctrl + shift + p를 눌러 command palette를 소환한 다음, install extensions를 검색하고 엔터를 누릅니다. 그 이후 vscodevim을 검색해 익스텐션을 설치합니다.
 
-이후 새로운 파일을 생성해 커서를 관찰하면 커서가 네모난 상자로 바뀐 것을 알 수 있습니다. vscodevim이 정상적으로 설치된 겁니다.
+이후 새로운 파일을 생성해 커서를 관찰해봅시다. 커서가 직사각형 모양의 네모로 변했다면 vscodevim이 정상적으로 설치된 겁니다.
 
-vscodevim 
+vscodevim 익스텐션을 disable하면 다시 커서가 정상적인 모양으로 돌아오는 것을 볼 수 있습니다.
+
+
+## vim adventure
+
+단축키를 익히는 건 사실 쉬실 일이 아닙니다. 다행히, vim 학습을 돕는 다양한 사이트들이 있습니다. 
+
+- https://vim-adventures.com/
+- https://openvim.com/
+- http://vimgenius.com/
+
+이 중에서, 우리는 오늘 간단히 vim adventures 게임을 3단계까지만 해보면서 손을 풀어 볼 겁니다.
+
 
 끝으로, fireship의 영상으로 이번 강의를 마치겠습니다.
 https://youtu.be/h55emgImrLk?t=198
