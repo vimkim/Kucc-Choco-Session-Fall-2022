@@ -118,6 +118,7 @@ vscodevim 익스텐션을 disable하면 다시 커서가 정상적인 모양으�
 
 
 끝으로, fireship의 영상으로 이번 강의를 마치겠습니다.
-[[](https://img.youtube.com/vi/h55emgImrLk/0.jpg)](https://youtu.be/h55emgImrLk?t=198)
+
+[![](https://img.youtube.com/vi/h55emgImrLk/0.jpg)](https://youtu.be/h55emgImrLk?t=198)
 
 모두 vim 써서 부모님께 효도합시다!
