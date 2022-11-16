@@ -1,10 +1,10 @@
-# More vim
+# More Vim
 
-## Basic usages
+## 간단한 사용법
 
-### Cursor movement
+### 커서 이동
 
-#### One character
+#### 한 글자
 
 > 사용 빈도: j, k 상 / h, l 중
 
@@ -13,10 +13,9 @@
 - k: 위로
 - l: 우
 
-#### One word
+#### 한 단어
 
 > 사용 빈도: 최상
-
 
 - w: 한 단어 앞으로 (커서를 단어의 맨 앞으로 옮김)
 - b: 한 단어 뒤로
@@ -26,10 +25,9 @@
 - B: 상동
 - E: 상동
 
-
 h, l보다는 w, b, e를 더 많이 활용하는 것이 생산성에 좋습니다.
 
-##### w, W의 차이점 
+##### w, W의 차이점
 
 w는
 
@@ -50,14 +48,17 @@ name
 
 W는 print(name)을 하나의 단어로 취급합니다.
 
-#### A paragraph
+#### 한 문단
+vim은 사이에 빈 줄 없이 빼곡히 서로 붙어 있는 줄들을 한 문단 (a paragraph)로 취급합니다.
+중괄호는 문단 간의 이동을 지원하는데, 매우 유용합니다.
 
 #### {, } (중괄호)
 
 > 사용 빈도: 최상
 
 커서를 이전 혹은 다음 빈 줄로 옮겨줍니다.
-```
+
+``` text
 (커서 위치 1)
 hello world my name is Kim.
 Daehyun.
@@ -69,7 +70,6 @@ def helloworld():
     print('hello world')
 (커서 위치 4)
 ```
-
 
 #### line start, line end
 
@@ -89,7 +89,7 @@ def helloworld():
 
 - % : 현재 커서가 위치한 곳에서부터 가장 가까운 (, {, [ 괄호들의 위치로 커서를 옮깁니다.
 
-한번 더 누르면 matching pair의 위치, 즉 ), }, ]가 위치한 곳으로 갑니다. 
+한번 더 누르면 matching pair의 위치, 즉 ), }, ]가 위치한 곳으로 갑니다.
 
 계속 누르면 이동을 반복합니다.
 
@@ -109,7 +109,7 @@ int main(){ // A
 
 vim의 모든 커서 위치는 vim jump list라는 곳에 기록됩니다.
 
-- ctrl + o: 기존 커서 위치로 돌아가기 (I'm out) 
+- ctrl + o: 기존 커서 위치로 돌아가기 (I'm out)
 - ctrl + i: 돌아가기 전 커서 위치로 되돌아가기 (I'm in)
 
 ### Code editing
@@ -180,7 +180,6 @@ print("hello world!") -> print(name)
 
 깨알팁: 3dd라고 하면 3줄이 바로 삭제됩니다.
 
-
 #### 복사, 붙여넣기
 
 위 c, d와 동일한 방법을 사용합니다. vim의 클립보드 (레지스터라고 부릅니다)에 자동으로 복사됩니다.
@@ -189,22 +188,25 @@ print("hello world!") -> print(name)
 
 - P를 통해 커서 왼쪽에 붙여넣을 수 있습니다.
 
-##### 주의: vim에서 복사 붙여넣기한 내용은 vim 고유의 클립보드로 복사됩니다. 시스템 클립보드로 붙여넣으려먼 
-```
+##### 주의: vim에서 복사 붙여넣기한 내용은 vim 고유의 클립보드로 복사됩니다. 시스템 클립보드로 붙여넣으려면
+
+``` text
 "*y
 혹은
 "+y
 ```
+
 를 써야 합니다.
 마찬가지로
-```
+
+``` text
 "*p
 "+p
 "*P
 "+P
 ```
-등을 통해 시스템 클립보드의 내용을 붙여넣을 수 있습니다.
 
+등을 통해 시스템 클립보드의 내용을 붙여넣을 수 있습니다.
 
 #### 삽입
 
@@ -234,7 +236,6 @@ print("hello world!") -> print(name)
 
 > 사용빈도: 최상
 
-
 #### 선택 (Visual Mode)
 
 d + text_object 하는 건 좋으나, 가끔은 직접 영역을 설정하고 싶을 때도 있습니다.
@@ -248,7 +249,7 @@ d + text_object 하는 건 좋으나, 가끔은 직접 영역을 설정하고 �
 - Visual mode
 
 중에서 마지막,
-바로 Visual mode에서 지원하는 3가지 기능입니다. 
+바로 Visual mode에서 지원하는 3가지 기능입니다.
 
 - 커서단위 선택 (일반적인 마우스 드래그): v
 - 줄단위 선택 (매우 유용, 사용빈도 최상): V
@@ -256,9 +257,8 @@ d + text_object 하는 건 좋으나, 가끔은 직접 영역을 설정하고 �
 
 v를 누르면 다시 v를 누르거나 esc를 누를 때까지 visual 모드에 진입합니다.
 hjkl, w, b, e등으로 여전히 커서를 움직일 수 있으며, 비쥬얼 모드에 진입한 커서의 위치부터,
-움직인 이후의 커서의 위치까지 모든 text를 text_object로 취급합니다. 
+움직인 이후의 커서의 위치까지 모든 text를 text_object로 취급합니다.
 즉, c, d, y등의 연산을 할 수 있습니다.
-
 
 #### 기타 기능
 
@@ -266,9 +266,90 @@ hjkl, w, b, e등으로 여전히 커서를 움직일 수 있으며, 비쥬얼 �
 
 > 사용빈도: 상
 
-
 - Ctrl + r: 되돌리기 무효 (redo)
 
 > 사용빈도 중상
 
+## .vimrc
 
+지금까지의 모든 단축키들은 다른 것으로 바꿀 수 있습니다.
+
+지금까지의 모든 기능들은 자동화 할 수도 있습니다.
+
+vim의 자유도는 거의 무한합니다.
+
+### .vimrc의 위치
+
+#### macOS
+
+~/.vimrc
+
+#### Windows
+
+$HOME/_vimrc
+
+### Neovim 사용자의 경우 init.vim을 사용하시면 됩니다
+
+#### Windows 사용자들의 init.vim 위치
+
+``` text
+~/AppData/Local/nvim/init.vim
+```
+
+#### macOS, Linux 사용자들의 init.vim 위치
+
+``` text
+~/.config/nvim/init.vim
+```
+
+### keymapping 문법
+
+- map: 모든 경우
+- nmap: 노말모드 매핑
+- imap: insert mode 매핑
+- vmap: visual mode 매핑
+
+하지만 이들은 모든 조합키를 글로벌하게 바꿔버리기 별로 잘 쓰이지 않고,우리가 99% 사용할 매핑은 non-recursive keymapping, 즉 비재귀 키매핑입니다.
+
+``` vim
+inoremap jj <esc> " insert mode에서 jj 키를 누르면 자동으로 normal mode 진입.
+nnoremap jj <esc> " normal mode에서 jj 키를 누르면 모든 행위를 취소해 줌.
+
+inoremap jk <esc> " insert mode에서 jk 키를 누르면 <esc>를 대신함. 추천합니다.
+nnoremap jk <esc> " normal mode에서 jk 키를 누르면 모든 행위를 취소해 줌. 추천합니다.
+
+inoremap ,s <esc>:w<cr> ",s를 누르면 자동으로 normal mode에 진입한 뒤 파일을 저장함. 추천
+nnoremap ,s :w<cr> " normal mode에서 자동으로 파일을 저장함.
+nnoremap ,q :q<cr> " ,q를 누르면 vim에서 빠져나옴.
+```
+
+> 사용 빈도: 최상
+
+위 키매핑은 vim을 쓰는 사람은 거의 대부분 자주 쓰는 키매핑입니다. 여러분들도 각자의 init.vim 혹은 .vimrc 파일에 적어넣어 둡시다.
+
+Default로 박아뒀으면 vim 사용자가 더 많았을텐데 아쉽습니다. 하지만 대부분의 IDE에서 vim keymapping을 지원하기 때문에 언제 어디서든 거의 대부분 사용할 수 있다는 장점이 있습니다.
+
+#### 이를 응용해서 h,j,k,l도 wasd로 매핑해두는 사람도 있나요???
+
+맞습니다! 실제로 그러는 사람도 많습니다.
+
+하지만, 체감 상 hjkl이 딱히 많이 쓰이지는 않으니 굳이 추천하지는 않습니다.
+더 중요한 것은 w, b, e, %, {, }, 그리고 그 외 편집 기능입니다.
+
+그리고 유닉스 진영에 hjkl단축키를 쓰는 프로그램들이 워낙 많아서, 익숙해지면 나쁘지 않습니다.
+
+## 수고하셨습니다
+
+이 정도만 알아가셔서 숙지하셔도 여러분들은 vim의 중수입니다!
+
+이 외에 소개하지 않아서 아쉬운 기능으로는
+
+- vim surround (강추)
+- vim macro (가끔 특수한 경우에 구세주)
+- vim plugins
+
+등이 있으나, 시간 관계 상 소개하지 못해 아쉽게 생각합니다.
+
+저는 저의 역할을 했으니, 더 궁금하신 분들은 추가로 vim 강의들을 찾아보시는 것을 권고드립니다.
+
+정말 도움이 되는 feature 들이 많습니다.
