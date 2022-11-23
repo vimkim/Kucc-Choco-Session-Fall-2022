@@ -210,5 +210,9 @@ ln -s ~/documents/github/dotfiles/.zshrc ~/.zshrc
 
 LSP 덕분에, 에디터(그리고 IDE)간의 경계가 거의 사라졌습니다. vim에서도 vscode의 대부분의 기능들을 누릴 수 있습니다!
 
+## Finally
+
+![picture 4](images/f8756bed807439390c1c1623497cf7d1316344d819b5b753a0de41bad3cede40.png)  
+
 > 여러분은 2022학년도 2학기 가을 KUCC Choco 세션을 모두 수강하셨습니다.
 > 축하합니다!!
