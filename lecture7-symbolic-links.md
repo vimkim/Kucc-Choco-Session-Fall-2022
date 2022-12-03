@@ -46,6 +46,8 @@ Computer\HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response
 
 되돌리는 방법: 다시 레지스트리 편집기를 연 뒤, 미리 기록해둔 기본값으로 위 5가지 변수들을 복구한 뒤 컴퓨터를 재부팅합니다.
 
+> flags = 59가 중요합니다. 다른 값으로 할 경우, control panel의 제한을 못 벗어납니다.
+
 ## TIP 2: windows sudo로 관리자 권한에서 profile.ps1 사용하기
 
 윈도우 콘솔이나 파워쉘에서 관리자 권한이 필요할 때마다 하던 작업을 멈추고 관리자 권한 터미널을 여느라
